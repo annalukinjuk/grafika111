@@ -16,7 +16,6 @@ def txt_to_lbl(event):
     text=txt.get()#From Entry to text
     lbl.configure(text=text)
     txt.delete(0,END)
-    #root.destroy()
 def valik():
     valik_=var.get()
     lbl.configure(text=valik_)
@@ -54,7 +53,7 @@ lbl.pack()
 nupp.pack() #raspolowenie vidgetov i knopok, esli v skovkah pusto to budet default, esli net to propisannoe
 #side=LEFT;RIGHT;TOP location
 txt.pack()
-r1.pack()
+r1.pack( padx=10, pady=10)
 r2.pack()
 r3.pack()
 root.mainloop() #eto 4tob zastavit okno rabotat
